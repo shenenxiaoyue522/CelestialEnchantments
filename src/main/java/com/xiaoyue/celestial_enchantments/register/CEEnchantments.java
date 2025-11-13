@@ -138,7 +138,7 @@ public class CEEnchantments {
 	public static final RegistryEntry<Enchantment> BORN_IN_SHADOW = reg("born_in_shadow", BornInShadow::new, "Recover %2$s durability every %3$s seconds in places where brightness level is less than %1$s");
 	public static final RegistryEntry<Enchantment> PHOTOSYNTHESIS = reg("photosynthesis", Photosynthesis::new, "Recover %2$s durability every %3$s seconds in places where brightness level is greater than %1$s");
 
-	// curse 1 breakable, 2 armor, 2 weapon, 1 head, 1 chest, 1 leg, 1 tool
+	// curse 1 breakable, 2 armors, 2 weapons, 1 head, 1 chest, 1 leg, 1 tool
 	public static final RegistryEntry<Enchantment> DESTRUCTION_CURSE = reg("destruction_curse", DestructionCurse::new, "Increase explosion damage received by %s, and increase other incoming damage by %s");
 	public static final RegistryEntry<Enchantment> OVEREATING_CURSE = reg("overeating_curse", OvereatingCurse::new, "Gain %s");
 	public static final RegistryEntry<Enchantment> CURSE_OF_WEAKNESS = reg("curse_of_weakness", CurseOfWeakness::new, "-%s of attack damage");
