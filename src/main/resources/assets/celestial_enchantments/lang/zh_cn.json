@@ -188,6 +188,10 @@
   "enchantment.celestial_enchantments.photo_dynamic.desc": "在亮度高于%s的地方提高%s挖掘速度",
   "enchantment.celestial_enchantments.accelerate_growth": "催熟",
   "enchantment.celestial_enchantments.accelerate_growth.desc": "右键作物可消耗部分耐久来催熟作物",
+  "enchantment.celestial_enchantments.experience_prospector": "淘经者",
+  "enchantment.celestial_enchantments.experience_prospector.desc": "挖掘方块时有%s概率额外掉落%s经验",
+  "enchantment.celestial_enchantments.moon_power": "月动力",
+  "enchantment.celestial_enchantments.moon_power.desc": "根据月相提升挖掘速度，至多在满月时提升%s",
 
   "enchantment.celestial_enchantments.sharp_halberd_tip": "锐利戟尖",
   "enchantment.celestial_enchantments.sharp_halberd_tip.desc": "提高%s近战与投掷伤害",

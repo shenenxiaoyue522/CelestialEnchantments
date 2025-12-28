@@ -10,10 +10,7 @@ import com.xiaoyue.celestial_enchantments.content.enchantments.shield.Constraint
 import com.xiaoyue.celestial_enchantments.content.enchantments.shield.HolyShield;
 import com.xiaoyue.celestial_enchantments.content.enchantments.shield.ReactiveBlock;
 import com.xiaoyue.celestial_enchantments.content.enchantments.shield.ScorchingShield;
-import com.xiaoyue.celestial_enchantments.content.enchantments.tool.AccelerateGrowth;
-import com.xiaoyue.celestial_enchantments.content.enchantments.tool.BornInShadow;
-import com.xiaoyue.celestial_enchantments.content.enchantments.tool.PhotoDynamic;
-import com.xiaoyue.celestial_enchantments.content.enchantments.tool.Photosynthesis;
+import com.xiaoyue.celestial_enchantments.content.enchantments.tool.*;
 import com.xiaoyue.celestial_enchantments.content.enchantments.trident.ExplosiveHalberd;
 import com.xiaoyue.celestial_enchantments.content.enchantments.trident.SharpHalberdTip;
 import com.xiaoyue.celestial_enchantments.content.enchantments.weapon.*;
@@ -23,14 +20,15 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
-import java.util.LinkedHashSet;
+import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @SuppressWarnings("unused")
 public class CEEnchantments {
 
-	public static final LinkedHashSet<String> ALL_ENCH = new LinkedHashSet<>();
+	public static int i = 1;
+	public static final LinkedHashMap<String, Integer> ALL_ENCH = new LinkedHashMap<>();
 
 	private static final Set<String> SMALL = Set.of("in", "of", "the", "a", "and");
 
@@ -39,8 +37,6 @@ public class CEEnchantments {
 				.map(e -> SMALL.contains(e) ? e : StringUtils.capitalize(e))
 				.collect(Collectors.joining(" ")));
 	}
-
-	// 81 enchantments
 
 	// weapons
 	public static final RegistryEntry<Enchantment> WITHERING_BLADE = reg("withering_blade", ApoptosisBlade::new, "Inflict %s"); // effect
@@ -133,6 +129,8 @@ public class CEEnchantments {
 	// tool
 	public static final RegistryEntry<Enchantment> PHOTO_DYNAMIC = reg("photo_dynamic", PhotoDynamic::new, "In places where brightness level is above %s, gain +%s mining speed");
 	public static final RegistryEntry<Enchantment> ACCELERATE_GROWTH = reg("accelerate_growth", AccelerateGrowth::new, "Right click to fertilize crops");
+	public static final RegistryEntry<Enchantment> EXPERIENCE_PROSPECTOR = reg("experience_prospector", ExperienceProspector::new, "When digging blocks, there is a %s chance to drop %s experience additionally");
+	public static final RegistryEntry<Enchantment> MOON_POWER = reg("moon_power", MoonPower::new, "Increases the digging speed according to the moon's phase, up to %s on the full moon");
 
 	// generic
 	public static final RegistryEntry<Enchantment> BORN_IN_SHADOW = reg("born_in_shadow", BornInShadow::new, "Recover %2$s durability every %3$s seconds in places where brightness level is less than %1$s");
@@ -150,7 +148,8 @@ public class CEEnchantments {
 	public static final RegistryEntry<Enchantment> CURSE_OF_CORROSION = reg("cures_of_corrosion", CorrosionCurse::new, "When equipped, lose %s durability every %s seconds until it has less than half durability");
 
 	public static RegistryEntry<Enchantment> reg(String id, NonNullSupplier<? extends Enchantment> sup, String desc) {
-		ALL_ENCH.add(id);
+		i = i + 1;
+		ALL_ENCH.put(id, i);
 		return CelestialEnchantments.REGISTRATE.enchantment(id, EnchantmentCategory.BREAKABLE,
 				(r, c, s) -> (Enchantment) sup.get(), desc).lang(parse(id)).register();
 	}
