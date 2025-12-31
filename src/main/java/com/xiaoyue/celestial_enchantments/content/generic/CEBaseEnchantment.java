@@ -52,6 +52,7 @@ public class CEBaseEnchantment extends Enchantment {
 		DIGGER(EnchantmentCategory.DIGGER, EquipmentSlot.MAINHAND),
 		TRIDENT(EnchantmentCategory.TRIDENT, EquipmentSlot.MAINHAND),
 		HOE(IEnchUtils.HOE, EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND),
+		AXE(IEnchUtils.AXE, EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND),
 		BOW(IEnchUtils.BOW_AND_CROSSBOW, EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND),
 		SHIELD(IEnchUtils.SHIELD, EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND),
 		ARMOR(EnchantmentCategory.ARMOR, EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET),

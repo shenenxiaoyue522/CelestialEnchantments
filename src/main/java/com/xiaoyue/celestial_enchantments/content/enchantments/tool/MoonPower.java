@@ -24,7 +24,7 @@ public class MoonPower extends ToolEnch implements PlayerBreakEnch {
     @Override
     public float onBreakSpeed(PlayerEvent.BreakSpeed event, Player player, BlockState blockState, int level) {
         float moonFactor = CCUtils.getMoonFactor(player.level());
-        return event.getOriginalSpeed() * (1 + moonFactor * speed());
+        return 1 + moonFactor * speed();
     }
 
     @Override
