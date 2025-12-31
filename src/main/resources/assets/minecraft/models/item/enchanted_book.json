@@ -8,7 +8,7 @@
       "predicate": {
         "celestial_enchantments:book": 2
       },
-      "model": "celestial_enchantments:item/book_1"
+      "model": "celestial_enchantments:item/generic_book"
     }
   ]
 }
