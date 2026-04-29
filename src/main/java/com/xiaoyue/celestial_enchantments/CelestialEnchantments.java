@@ -3,10 +3,7 @@ package com.xiaoyue.celestial_enchantments;
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.util.entry.RegistryEntry;
-import com.xiaoyue.celestial_enchantments.data.CELang;
-import com.xiaoyue.celestial_enchantments.data.CEModConfig;
-import com.xiaoyue.celestial_enchantments.data.CERecipeGen;
-import com.xiaoyue.celestial_enchantments.data.CETagGen;
+import com.xiaoyue.celestial_enchantments.data.*;
 import com.xiaoyue.celestial_enchantments.event.CEAttackListener;
 import com.xiaoyue.celestial_enchantments.register.CEEffects;
 import com.xiaoyue.celestial_enchantments.register.CEEnchantments;
@@ -54,7 +51,7 @@ public class CelestialEnchantments {
 	@SubscribeEvent
 	public static void gatherData(GatherDataEvent event) {
 		DataGenerator gen = event.getGenerator();
-		// gen.addProvider(event.includeClient(), new CEBookModelGen(gen.getPackOutput(), event.getExistingFileHelper()));
+		gen.addProvider(event.includeClient(), new CEBookModelGen(gen.getPackOutput(), event.getExistingFileHelper()));
 	}
 
 	public static ResourceLocation loc(String id) {
