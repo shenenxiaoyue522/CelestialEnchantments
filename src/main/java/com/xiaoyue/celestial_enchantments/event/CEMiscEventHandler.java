@@ -3,6 +3,7 @@ package com.xiaoyue.celestial_enchantments.event;
 import com.xiaoyue.celestial_enchantments.content.enchantments.armor.DimensionExplorer;
 import com.xiaoyue.celestial_enchantments.content.enchantments.armor.PotionAffinity;
 import com.xiaoyue.celestial_enchantments.content.enchantments.tool.AccelerateGrowth;
+import com.xiaoyue.celestial_enchantments.content.enchantments.tool.ExperienceProspector;
 import com.xiaoyue.celestial_enchantments.register.CEEffects;
 import com.xiaoyue.celestial_enchantments.register.CEEnchantments;
 import net.minecraft.world.entity.LivingEntity;
@@ -53,7 +54,7 @@ public class CEMiscEventHandler {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
 		Player player = event.getPlayer();
-		// int lv = EnchantmentHelper.getEnchantmentLevel(CEEnchantments.EXPERIENCE_PROSPECTOR.get(), player);
-		// if (lv > 0) ExperienceProspector.onBlockBreak(player, event, lv);
+		 int lv = EnchantmentHelper.getEnchantmentLevel(CEEnchantments.EXPERIENCE_PROSPECTOR.get(), player);
+		 if (lv > 0) ExperienceProspector.onBlockBreak(player, event, lv);
 	}
 }

@@ -127,10 +127,10 @@ public class CEEnchantments {
 
 	// tool
 	public static final RegistryEntry<Enchantment> PHOTO_DYNAMIC = reg("photo_dynamic", PhotoDynamic::new, "In places where brightness level is above %s, gain +%s mining speed");
-	// public static final RegistryEntry<Enchantment> EXPERIENCE_PROSPECTOR = reg("experience_prospector", ExperienceProspector::new, "When digging blocks, there is a %s chance to drop %s experience additionally");
+	public static final RegistryEntry<Enchantment> EXPERIENCE_PROSPECTOR = reg("experience_prospector", ExperienceProspector::new, "When digging blocks, there is a %s chance to drop %s experience additionally");
 	public static final RegistryEntry<Enchantment> MOON_POWER = reg("moon_power", MoonPower::new, "Increases the digging speed according to the moon's phase, up to %s on the full moon");
 	// axe
-	// public static final RegistryEntry<Enchantment> LEAF_CUTTING = reg("leaf_cutting", LeafCutting::new, "This tool is capable of instantly destroying leaves");
+	public static final RegistryEntry<Enchantment> LEAF_CUTTING = reg("leaf_cutting", LeafCutting::new, "This tool is capable of instantly destroying leaves");
 	// hoe
 	public static final RegistryEntry<Enchantment> ACCELERATE_GROWTH = reg("accelerate_growth", AccelerateGrowth::new, "Right click to fertilize crops");
 

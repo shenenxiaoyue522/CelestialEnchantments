@@ -416,81 +416,93 @@
       }
     },
     {
-      "model": "celestial_enchantments:item/moon_power",
+      "model": "celestial_enchantments:item/experience_prospector",
       "predicate": {
         "celestial_enchantments:book": 71.0
       }
     },
     {
-      "model": "celestial_enchantments:item/accelerate_growth",
+      "model": "celestial_enchantments:item/moon_power",
       "predicate": {
         "celestial_enchantments:book": 72.0
       }
     },
     {
-      "model": "celestial_enchantments:item/born_in_shadow",
+      "model": "celestial_enchantments:item/leaf_cutting",
       "predicate": {
         "celestial_enchantments:book": 73.0
       }
     },
     {
-      "model": "celestial_enchantments:item/photosynthesis",
+      "model": "celestial_enchantments:item/accelerate_growth",
       "predicate": {
         "celestial_enchantments:book": 74.0
       }
     },
     {
-      "model": "celestial_enchantments:item/destruction_curse",
+      "model": "celestial_enchantments:item/born_in_shadow",
       "predicate": {
         "celestial_enchantments:book": 75.0
       }
     },
     {
-      "model": "celestial_enchantments:item/overeating_curse",
+      "model": "celestial_enchantments:item/photosynthesis",
       "predicate": {
         "celestial_enchantments:book": 76.0
       }
     },
     {
-      "model": "celestial_enchantments:item/curse_of_weakness",
+      "model": "celestial_enchantments:item/destruction_curse",
       "predicate": {
         "celestial_enchantments:book": 77.0
       }
     },
     {
-      "model": "celestial_enchantments:item/powerless_curse",
+      "model": "celestial_enchantments:item/overeating_curse",
       "predicate": {
         "celestial_enchantments:book": 78.0
       }
     },
     {
-      "model": "celestial_enchantments:item/dragging_curse",
+      "model": "celestial_enchantments:item/curse_of_weakness",
       "predicate": {
         "celestial_enchantments:book": 79.0
       }
     },
     {
-      "model": "celestial_enchantments:item/curse_of_gravity",
+      "model": "celestial_enchantments:item/powerless_curse",
       "predicate": {
         "celestial_enchantments:book": 80.0
       }
     },
     {
-      "model": "celestial_enchantments:item/curse_of_withering",
+      "model": "celestial_enchantments:item/dragging_curse",
       "predicate": {
         "celestial_enchantments:book": 81.0
       }
     },
     {
-      "model": "celestial_enchantments:item/curse_of_illiteracy",
+      "model": "celestial_enchantments:item/curse_of_gravity",
       "predicate": {
         "celestial_enchantments:book": 82.0
       }
     },
     {
-      "model": "celestial_enchantments:item/cures_of_corrosion",
+      "model": "celestial_enchantments:item/curse_of_withering",
       "predicate": {
         "celestial_enchantments:book": 83.0
+      }
+    },
+    {
+      "model": "celestial_enchantments:item/curse_of_illiteracy",
+      "predicate": {
+        "celestial_enchantments:book": 84.0
+      }
+    },
+    {
+      "model": "celestial_enchantments:item/cures_of_corrosion",
+      "predicate": {
+        "celestial_enchantments:book": 85.0
       }
     },
     {
