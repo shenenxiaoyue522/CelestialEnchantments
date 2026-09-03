@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.abyssal_contact"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gold",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:abyssal_contact"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/prot",
+  "max_cost": {
+    "base": 24,
+    "per_level_above_first": 7
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 7
+  },
+  "primary_items": "#minecraft:enchantable/armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1
+}

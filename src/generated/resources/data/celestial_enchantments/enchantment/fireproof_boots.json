@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.fireproof_boots"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "green",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:fireproof_boots"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/armor_effect",
+  "max_cost": {
+    "base": 70,
+    "per_level_above_first": 30
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#minecraft:enchantable/foot_armor",
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 10
+}

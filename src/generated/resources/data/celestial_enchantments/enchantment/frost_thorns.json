@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.frost_thorns"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "dark_aqua",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:frost_thorns"
+    ]
+  },
+  "exclusive_set": "minecraft:thorns",
+  "max_cost": {
+    "base": 32,
+    "per_level_above_first": 6
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 6
+  },
+  "primary_items": "#minecraft:enchantable/armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 2
+}

@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.death_blade"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gold",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:death_blade"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/epic",
+  "max_cost": {
+    "base": 57,
+    "per_level_above_first": 6
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 45,
+    "per_level_above_first": 6
+  },
+  "primary_items": "#minecraft:enchantable/weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 2
+}

@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.death_hatred"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "light_purple",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:death_hatred"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/death",
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#minecraft:enchantable/chest_armor",
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 2
+}

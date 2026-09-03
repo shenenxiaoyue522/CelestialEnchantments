@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.celestial_shelter"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gold",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:celestial_shelter"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/prot",
+  "max_cost": {
+    "base": 105,
+    "per_level_above_first": 30
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 45,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#minecraft:enchantable/chest_armor",
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 1
+}

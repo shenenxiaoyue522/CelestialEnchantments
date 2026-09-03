@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.experience_prospector"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gray",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:experience_prospector"
+    ]
+  },
+  "max_cost": {
+    "base": 59,
+    "per_level_above_first": 7
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 45,
+    "per_level_above_first": 7
+  },
+  "primary_items": "#minecraft:enchantable/mining",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/mining",
+  "weight": 1
+}

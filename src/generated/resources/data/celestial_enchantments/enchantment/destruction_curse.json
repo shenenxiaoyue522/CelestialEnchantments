@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.destruction_curse"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "red",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:destruction_curse"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/curse",
+  "max_cost": {
+    "base": 61,
+    "per_level_above_first": 30
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#minecraft:enchantable/armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 5
+}

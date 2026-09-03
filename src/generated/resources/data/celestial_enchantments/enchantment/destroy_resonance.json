@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.destroy_resonance"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "dark_aqua",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:destroy_resonance"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/reactive",
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#minecraft:enchantable/armor",
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 2
+}

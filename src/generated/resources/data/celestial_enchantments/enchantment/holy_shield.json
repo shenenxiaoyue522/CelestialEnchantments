@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.holy_shield"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "dark_aqua",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:holy_shield"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/shield",
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#celestial_enchantments:enchantable/shield",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#celestial_enchantments:enchantable/shield",
+  "weight": 2
+}

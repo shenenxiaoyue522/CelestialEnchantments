@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.death_pact"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "light_purple",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:death_pact"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/death",
+  "max_cost": {
+    "base": 22,
+    "per_level_above_first": 6
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 6
+  },
+  "primary_items": "#minecraft:enchantable/chest_armor",
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 5
+}

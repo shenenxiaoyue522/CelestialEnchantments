@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.accelerate_growth"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gray",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:accelerate_growth"
+    ]
+  },
+  "max_cost": {
+    "base": 80,
+    "per_level_above_first": 30
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#celestial_enchantments:enchantable/hoe",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#celestial_enchantments:enchantable/hoe",
+  "weight": 5
+}

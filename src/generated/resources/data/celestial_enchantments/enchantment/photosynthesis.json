@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.photosynthesis"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "dark_aqua",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:photosynthesis"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/general",
+  "max_cost": {
+    "base": 22,
+    "per_level_above_first": 6
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 6
+  },
+  "primary_items": "#minecraft:enchantable/durability",
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 10
+}

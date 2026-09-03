@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.explosive_arrow"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "dark_green",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:explosive_arrow"
+    ]
+  },
+  "exclusive_set": "minecraft:flame",
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#celestial_enchantments:enchantable/bow_and_crossbow",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#celestial_enchantments:enchantable/bow_and_crossbow",
+  "weight": 1
+}

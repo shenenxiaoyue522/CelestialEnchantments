@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.pure_body"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "green",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:pure_body"
+    ]
+  },
+  "exclusive_set": "#celestial_enchantments:exclusive/armor_effect",
+  "max_cost": {
+    "base": 70,
+    "per_level_above_first": 30
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#minecraft:enchantable/leg_armor",
+  "slots": [
+    "legs"
+  ],
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1
+}

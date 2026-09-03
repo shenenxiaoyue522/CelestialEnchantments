@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.celestial_enchantments.leaf_cutting"
+  },
+  "effects": {
+    "l2core:color": [
+      {
+        "base": "gray",
+        "desc": "gray"
+      }
+    ],
+    "l2core:legacy": [
+      "celestial_enchantments:leaf_cutting"
+    ]
+  },
+  "max_cost": {
+    "base": 70,
+    "per_level_above_first": 30
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 30
+  },
+  "primary_items": "#celestial_enchantments:enchantable/axe",
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#celestial_enchantments:enchantable/axe",
+  "weight": 10
+}
