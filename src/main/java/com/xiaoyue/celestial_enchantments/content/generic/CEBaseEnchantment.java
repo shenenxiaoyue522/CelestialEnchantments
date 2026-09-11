@@ -115,6 +115,10 @@ public abstract class CEBaseEnchantment extends LegacyEnchantment implements Cus
 		return val.holder();
 	}
 
+	public ResourceKey<Enchantment> getKey() {
+		return val.id();
+	}
+
 	public boolean isEnabled() {
 		return CEModConfig.COMMON.enabled(this);
 	}

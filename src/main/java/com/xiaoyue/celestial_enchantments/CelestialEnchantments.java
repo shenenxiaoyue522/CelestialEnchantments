@@ -12,6 +12,7 @@ import com.xiaoyue.celestial_invoker.content.common.registrar.RegistrateExtra;
 import dev.xkmc.l2core.init.reg.registrate.L2Registrate;
 import dev.xkmc.l2core.init.reg.registrate.SimpleEntry;
 import dev.xkmc.l2damagetracker.contents.attack.AttackEventHandler;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.EnchantedBookItem;
@@ -36,16 +37,22 @@ public class CelestialEnchantments {
 	public static final SimpleEntry<CreativeModeTab> TAB_ENCHMIN = REGISTRATE.buildModCreativeTab(
 			"min_enchantment", "Celestial Enchantments - Min Level",
 			b -> b.icon(Items.BOOK::getDefaultInstance)
-					.displayItems((params, output) -> CEBaseEnchantment.getCache().forEach(e ->
-							output.accept(CEBaseEnchantment.makeBook(e.getHolder(), 1)))));
+					.displayItems((params, output) -> {
+						var enchants = params.holders().lookupOrThrow(Registries.ENCHANTMENT);
+						CEBaseEnchantment.getCache().forEach(e ->
+								output.accept(CEBaseEnchantment.makeBook(enchants.getOrThrow(e.getKey()), 1)));
+					}));
 
 	public static final SimpleEntry<CreativeModeTab> TAB_ENCHMAX = REGISTRATE.buildModCreativeTab(
 			"max_enchantment", "Celestial Enchantments - Max Level",
 			b -> b.icon(() -> EnchantedBookItem.createForEnchantment(new EnchantmentInstance(
 							CEEnchantments.ACCELERATE_GROWTH.holder(), 1)))
 					.withTabsBefore(TAB_ENCHMIN.key())
-					.displayItems((params, output) -> CEBaseEnchantment.getCache().forEach(e ->
-							output.accept(CEBaseEnchantment.makeBook(e.getHolder(), e.getMaxLevel())))));
+					.displayItems((params, output) -> {
+						var enchants = params.holders().lookupOrThrow(Registries.ENCHANTMENT);
+						CEBaseEnchantment.getCache().forEach(e ->
+								output.accept(CEBaseEnchantment.makeBook(enchants.getOrThrow(e.getKey()), e.getMaxLevel())));
+					}));
 
 	public CelestialEnchantments() {
 		CEEnchantments.register();
